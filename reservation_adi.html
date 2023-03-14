@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ticket Booking</title>
+	<link rel="stylesheet" href="reservation_adi.css">
+</head>
+<body>
+<h1>Book a trip with us today</h1>
+<p>Book online in advance to avail of our lowest web fares. The best way to find the lowest Intercity fare is to use the Journey Planner above.  Just enter your travel requirements into the 'From' and 'To' fields, select your date(s) of travel and click 'Go'.
+
+	We have a fare and ticket for every occasion. However, currently it is not possible to show every combination of stations but we have provided links below to a selection of our most popular.</p>
+
+	<!-- reservation section starts  -->
+	<section class="reservation" id="reservation">
+
+		<form action="reservation.php" method="post">
+			<h3>Make a Reservation</h3>
+			<div class="flex">
+				<div class="box">
+					<p>Departure Date <span>*</span></p>
+					<input type="date" name="check_in" class="input" required>
+				</div>
+				<div class="box">
+					<p>Arrival Date <span>*</span></p>
+					<input type="date" name="check_out" class="input" required>
+				</div>
+				<div class="box">
+					<p>Adults <span>*</span></p>
+					<select name="adults" class="input" required>
+						<option value="0">0 adult</option>
+						<option value="1">1 adult</option>
+						<option value="2">2 adults</option>
+						<option value="3">3 adults</option>
+						<option value="4">4 adults</option>
+						<option value="5">5 adults</option>
+						<option value="6">6 adults</option>
+					</select>
+				</div>
+				<div class="box">
+					<p>Children <span>*</span></p>
+					<select name="childs" class="input" required>
+						<option value="-">0 child</option>
+						<option value="1">1 child</option>
+						<option value="2">2 children</option>
+						<option value="3">3 children</option>
+						<option value="4">4 children</option>
+						<option value="5">5 children</option>
+						<option value="6">6 children</option>
+					</select>
+				</div>
+				<div class="box">
+					<p>Trips <span>*</span></p>
+					<select name="Trips" class="input" required>
+						<option value="1">One Way</option>
+						<option value="2">Return</option>
+						<option value="3">Open Return</option>
+					</select>
+				</div>
+			</div>
+			<div class="box">
+				<p>Station <span>*</span></p>
+				<select name="station" class="input" required>
+					<option value="1">Athlone - Dublin</option>
+					<option value="2">Athlone - Galway</option>
+					<option value="3">Athlone - Cork</option>
+					<option value="3">Athlone - Limerick</option>
+				</select>
+			</div>
+		</div>
+			<input type="submit" value="Check Availability" name="check" class="btn">
+		</form>
+
+	</section>
+
+</body>
+</html>

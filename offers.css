@@ -1,0 +1,79 @@
+/* Set default styles for the page */
+
+body {
+   background: #008080; 
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+   /* background-color: #333;*/
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Style the main content */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  section {
+    width: 30%;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #b5adad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* CSS for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card Booking</title>
+	<link rel="stylesheet" href="card booking.css">
+</head>
+<body>
+
+	<div class="wrapper">
+	    <div class="title">
+	        Card Booking
+	    </div>
+	    
+	    <form action="card.php" method="post">
+	        <div class="form">
+	            <div class="inputfield">
+	                <label>First Name</label>
+	                <input type="text" class="input" name="firstName">
+	            </div>  
+	            
+	            <div class="inputfield">
+	                <label>Last Name</label>
+	                <input type="text" class="input" name="lastName">
+	            </div>  
+	      
+	            <div class="inputfield">
+	                <label>Email Address</label>
+	                <input type="email" class="input" name="email">
+	            </div>  
+	      
+	            <div class="inputfield">
+	                <label>Mobile Number</label>
+	                <input type="tel" class="input" name="number" required>
+	            </div>  
+	      
+	            <div class="inputfield">
+	                <label>Birth Date</label>
+	                <input type="date" class="input" name="birthDate" required>
+	            </div>
+	            
+	            <div class="inputfield">
+	                <label>Gender</label>
+	                <div class="custom_select">
+	                    <select name="gender">
+	                        <option value="">Select</option>
+	                        <option value="male">Male</option>
+	                        <option value="female">Female</option>
+	                    </select>
+	                </div>
+	            </div> 
+	            
+	            <div class="inputfield">
+	                <label for="class">Card Type</label>
+	                <div class="custom_select">
+	                    <select name="cardType">
+	                        <option value="Children">Children</option>
+	                        <option value="Student">Student</option>
+	                        <option value="Adult">Adult</option>
+	                    </select>
+	                </div>
+	            </div>
+	            
+	            <div class="inputfield terms">
+	                <label class="check">
+	                    <input type="checkbox" required>
+	                    <span class="checkmark"></span>
+	                </label>
+	                <p>Agreed to terms and conditions</p>
+	            </div>
+	            
+	            <div class="inputfield">
+	                <input type="submit" value="Payment" class="btn">
+	            </div>
+	        </div>
+	    </form>
+	</div>
+
+</body>
+</html>
