@@ -25,7 +25,7 @@ body {
   
   header {
     background-color: #333;
-    color: #fff;
+    color: black;
     padding: 20px;
   }
   
@@ -56,10 +56,12 @@ body {
   
   p {
     margin-bottom: 30px;
+    color: #fff8dc
   }
   
   ul, ol {
     margin-bottom: 30px;
+    color: #fff8dc
   }
   
   /* About Section Styles */

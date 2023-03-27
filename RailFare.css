@@ -1,0 +1,70 @@
+*{
+
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+  
+  background: #008080; 
+}
+
+.container {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img {
+
+width: 50vw;
+height: 170vh;
+display: block;
+object-fit: cover;
+object-position: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 1200px;
+  background-color:#fff8dc;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: white;
+  
+}
+
+.col textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  
+}
+
+
+
